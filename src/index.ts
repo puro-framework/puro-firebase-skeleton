@@ -27,6 +27,10 @@ import { BookPlugin } from './book/plugin';
 
 import * as functions from 'firebase-functions';
 
+// Loads the configuration from Firebase
+const config = functions.config();
+process.env.PURO_PARAMS = Buffer.from(config.puro.params, 'base64').toString();
+
 const puro = new Puro();
 
 puro.install(new BookPlugin());
