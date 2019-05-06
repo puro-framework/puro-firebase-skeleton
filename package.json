@@ -20,7 +20,7 @@
     "preset": "ts-jest"
   },
   "dependencies": {
-    "@puro/core": "0.1.0-alpha1",
+    "@puro/core": "0.1.0-alpha15",
     "firebase-admin": "~6.0.0",
     "firebase-functions": "^2.1.0",
     "typeorm": "^0.2.9",
